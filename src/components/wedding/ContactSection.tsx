@@ -7,13 +7,13 @@ import { LeafSvg } from "./BotanicalDecoration";
 const contacts = [
   {
     name: "Kati",
-    role: "Bride",
+    role: "Menyasszony",
     phone: "+36 30 123 4567",
     email: "kati@example.com",
   },
   {
     name: "Martin",
-    role: "Groom",
+    role: "Vőlegény",
     phone: "+36 30 765 4321",
     email: "martin@example.com",
   },
@@ -34,10 +34,10 @@ export const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-heading text-foreground mb-4">
-            Get in Touch
+            Kapcsolat
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Have questions? We'd love to hear from you
+            Kérdésed van? Szívesen válaszolunk
           </p>
         </motion.div>
 
@@ -95,7 +95,7 @@ export const ContactSection = () => {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366]/10 text-[#25D366] hover:bg-[#25D366]/20 transition-colors"
           >
             <MessageCircle size={20} />
-            Message us on WhatsApp
+            Üzenj nekünk WhatsAppon
           </a>
         </motion.div>
       </div>
@@ -108,9 +108,9 @@ export const Footer = () => (
     <div className="section-container text-center">
       <LeafSvg className="w-8 h-12 mx-auto mb-6 text-primary/30" />
       <p className="font-serif text-2xl text-foreground mb-2">Kati & Martin</p>
-      <p className="text-sm text-muted-foreground mb-6">September 14, 2025</p>
+      <p className="text-sm text-muted-foreground mb-6">2025. szeptember 14.</p>
       <p className="text-xs text-muted-foreground">
-        Made with love for our special day
+        Szeretettel készítve a nagy napunkra
       </p>
     </div>
   </footer>

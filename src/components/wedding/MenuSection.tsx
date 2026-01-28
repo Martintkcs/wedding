@@ -7,42 +7,42 @@ import { SectionDivider } from "./BotanicalDecoration";
 const menuCategories = [
   {
     icon: Wine,
-    title: "Welcome Drinks",
+    title: "Üdvözlő italok",
     items: [
       "Aperol Spritz",
-      "Elderflower Prosecco",
-      "Fresh Lemonade",
-      "Sparkling Water",
+      "Bodzás prosecco",
+      "Friss limonádé",
+      "Szénsavas víz",
     ],
   },
   {
     icon: Utensils,
-    title: "Dinner",
+    title: "Vacsora",
     items: [
-      { course: "Starter", dish: "Hungarian Goose Liver Terrine with Fig Compote" },
-      { course: "Main", dish: "Slow-Roasted Duck Breast with Cherry Reduction" },
-      { course: "Vegetarian", dish: "Wild Mushroom Risotto with Truffle Oil" },
-      { course: "Dessert", dish: "Dobos Torte with Caramel Cream" },
+      { course: "Előétel", dish: "Magyar libamájterrine fügekompóttal" },
+      { course: "Főétel", dish: "Lassan sült kacsamell meggyszósszal" },
+      { course: "Vegetáriánus", dish: "Erdei gombás rizottó szarvasgombaolajjal" },
+      { course: "Desszert", dish: "Dobos torta karamellkrémmel" },
     ],
   },
   {
     icon: Moon,
-    title: "Midnight Snack",
+    title: "Éjféli falatok",
     items: [
-      "Traditional Goulash Soup",
-      "Lángos with Sour Cream",
-      "Kürtőskalács (Chimney Cake)",
+      "Hagyományos gulyásleves",
+      "Lángos tejföllel",
+      "Kürtőskalács",
     ],
   },
   {
     icon: Coffee,
-    title: "Drinks All Night",
+    title: "Italok egész éjjel",
     items: [
-      "Hungarian Wines (Tokaji, Egri)",
-      "Craft Beer Selection",
-      "Signature Cocktails",
-      "Pálinka Tasting",
-      "Coffee & Tea Station",
+      "Magyar borok (tokaji, egri)",
+      "Válogatott kézműves sörök",
+      "Egyedi koktélok",
+      "Pálinkakóstoló",
+      "Kávé- és teapont",
     ],
   },
 ];
@@ -62,10 +62,10 @@ export const MenuSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-heading text-foreground mb-4">
-            Food & Drinks
+            Ételek és italok
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            A taste of Hungarian hospitality
+            A magyar vendégszeretet ízei
           </p>
         </motion.div>
 
@@ -121,11 +121,11 @@ export const MenuSection = () => {
             <AlertCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
             <div>
               <h4 className="font-medium text-foreground mb-1">
-                Dietary Requirements
+                Étkezési igények
               </h4>
               <p className="text-sm text-muted-foreground">
-                Please let us know about any allergies or dietary restrictions when you RSVP. 
-                We're happy to accommodate vegetarian, vegan, gluten-free, and other dietary needs.
+                Kérjük, a visszajelzéskor jelezzétek az allergiákat vagy étkezési megkötéseket.
+                Szívesen alkalmazkodunk vegetáriánus, vegán, gluténmentes és egyéb igényekhez is.
               </p>
             </div>
           </div>

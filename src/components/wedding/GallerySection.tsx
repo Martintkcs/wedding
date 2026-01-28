@@ -5,12 +5,12 @@ import { Camera, ExternalLink } from "lucide-react";
 import { SectionDivider } from "./BotanicalDecoration";
 
 const galleryImages = [
-  { id: 1, alt: "Couple photo 1" },
-  { id: 2, alt: "Couple photo 2" },
-  { id: 3, alt: "Couple photo 3" },
-  { id: 4, alt: "Couple photo 4" },
-  { id: 5, alt: "Couple photo 5" },
-  { id: 6, alt: "Couple photo 6" },
+  { id: 1, alt: "Páros fotó 1" },
+  { id: 2, alt: "Páros fotó 2" },
+  { id: 3, alt: "Páros fotó 3" },
+  { id: 4, alt: "Páros fotó 4" },
+  { id: 5, alt: "Páros fotó 5" },
+  { id: 6, alt: "Páros fotó 6" },
 ];
 
 export const GallerySection = () => {
@@ -28,10 +28,10 @@ export const GallerySection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-heading text-foreground mb-4">
-            Our Story
+            A mi történetünk
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            A glimpse into our journey together
+            Egy pillantás közös utunkra
           </p>
         </motion.div>
 
@@ -69,7 +69,7 @@ export const GallerySection = () => {
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
           >
             <Camera size={18} />
-            <span>Upload your photos after the wedding</span>
+            <span>Töltsd fel a fotóidat az esküvő után</span>
             <ExternalLink size={14} />
           </a>
         </motion.div>

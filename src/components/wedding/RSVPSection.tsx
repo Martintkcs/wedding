@@ -41,8 +41,8 @@ export const RSVPSection = () => {
     setIsSubmitted(true);
 
     toast({
-      title: "RSVP Received!",
-      description: "Thank you for your response. We can't wait to celebrate with you!",
+      title: "Visszajelzés megérkezett!",
+      description: "Köszönjük a válaszodat. Alig várjuk, hogy veletek ünnepeljünk!",
     });
   };
 
@@ -65,10 +65,10 @@ export const RSVPSection = () => {
                 <Heart className="w-10 h-10 text-primary" />
               </motion.div>
               <h3 className="font-serif text-2xl text-foreground mb-3">
-                Thank You!
+                Köszönjük!
               </h3>
               <p className="text-muted-foreground">
-                Your RSVP has been received. We're so excited to have you join us on our special day!
+                Megkaptuk a visszajelzésed. Nagyon örülünk, hogy velünk ünnepelsz a nagy napon!
               </p>
             </div>
           </motion.div>
@@ -87,9 +87,9 @@ export const RSVPSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-heading text-foreground mb-4">RSVP</h2>
+          <h2 className="text-heading text-foreground mb-4">Visszajelzés</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Please let us know if you can make it by August 1, 2025
+            Kérjük, jelezzetek vissza legkésőbb 2025. augusztus 1-ig
           </p>
         </motion.div>
 
@@ -106,7 +106,7 @@ export const RSVPSection = () => {
                 htmlFor="name"
                 className="block text-sm font-medium text-foreground mb-2"
               >
-                Full Name(s) *
+                Teljes név(ek) *
               </label>
               <input
                 type="text"
@@ -115,7 +115,7 @@ export const RSVPSection = () => {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="e.g., John & Jane Smith"
+                placeholder="pl. Kovács Anna és Nagy Péter"
                 className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
               />
             </div>
@@ -126,7 +126,7 @@ export const RSVPSection = () => {
                 htmlFor="email"
                 className="block text-sm font-medium text-foreground mb-2"
               >
-                Email
+                E-mail
               </label>
               <input
                 type="email"
@@ -142,7 +142,7 @@ export const RSVPSection = () => {
             {/* Attending */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Will you be attending? *
+                Részt veszel? *
               </label>
               <div className="flex gap-4">
                 <label className="flex-1">
@@ -156,7 +156,7 @@ export const RSVPSection = () => {
                   />
                   <div className="p-4 text-center rounded-xl border-2 border-border cursor-pointer transition-all peer-checked:border-primary peer-checked:bg-primary/5 hover:border-primary/50">
                     <Check className="w-5 h-5 mx-auto mb-1 text-primary" />
-                    <span className="text-sm font-medium">Joyfully Accept</span>
+                    <span className="text-sm font-medium">Örömmel elfogadom</span>
                   </div>
                 </label>
                 <label className="flex-1">
@@ -170,7 +170,7 @@ export const RSVPSection = () => {
                   <div className="p-4 text-center rounded-xl border-2 border-border cursor-pointer transition-all peer-checked:border-primary peer-checked:bg-primary/5 hover:border-primary/50">
                     <span className="block text-lg mb-1">😢</span>
                     <span className="text-sm font-medium">
-                      Regretfully Decline
+                      Sajnálattal visszautasítom
                     </span>
                   </div>
                 </label>
@@ -183,7 +183,7 @@ export const RSVPSection = () => {
                 htmlFor="guests"
                 className="block text-sm font-medium text-foreground mb-2"
               >
-                Number of Guests
+                Vendégek száma
               </label>
               <select
                 id="guests"
@@ -194,7 +194,7 @@ export const RSVPSection = () => {
               >
                 {[1, 2, 3, 4].map((num) => (
                   <option key={num} value={num}>
-                    {num} {num === 1 ? "guest" : "guests"}
+                    {num} vendég
                   </option>
                 ))}
               </select>
@@ -206,7 +206,7 @@ export const RSVPSection = () => {
                 htmlFor="dietary"
                 className="block text-sm font-medium text-foreground mb-2"
               >
-                Dietary Restrictions / Allergies
+                Étkezési megkötések / allergiák
               </label>
               <input
                 type="text"
@@ -214,7 +214,7 @@ export const RSVPSection = () => {
                 name="dietary"
                 value={formData.dietary}
                 onChange={handleChange}
-                placeholder="e.g., Vegetarian, Gluten-free, Nut allergy"
+                placeholder="pl. vegetáriánus, gluténmentes, dióallergia"
                 className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
               />
             </div>
@@ -225,7 +225,7 @@ export const RSVPSection = () => {
                 htmlFor="message"
                 className="block text-sm font-medium text-foreground mb-2"
               >
-                Message for the Couple
+                Üzenet a párnak
               </label>
               <textarea
                 id="message"
@@ -233,15 +233,15 @@ export const RSVPSection = () => {
                 rows={3}
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Share your well wishes or any notes..."
+                placeholder="Írd meg jókívánságaidat vagy bármilyen megjegyzést..."
                 className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors resize-none"
               />
             </div>
 
             {/* Privacy Note */}
             <p className="text-xs text-muted-foreground">
-              By submitting this form, you agree that we may contact you regarding
-              the wedding. Your information will not be shared with third parties.
+              Az űrlap elküldésével hozzájárulsz, hogy az esküvővel kapcsolatban felvegyük veled a
+              kapcsolatot. Adataidat nem osztjuk meg harmadik féllel.
             </p>
 
             {/* Submit */}
@@ -271,12 +271,12 @@ export const RSVPSection = () => {
                       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                     />
                   </svg>
-                  Sending...
+                  Küldés...
                 </span>
               ) : (
                 <span className="flex items-center justify-center gap-2">
                   <Send size={18} />
-                  Send RSVP
+                  Visszajelzés küldése
                 </span>
               )}
             </button>

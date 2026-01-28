@@ -92,10 +92,10 @@ export const HeroSection = () => {
         delay: 0.6
       }} className="space-y-2 mb-12">
           <p className="text-xl sm:text-2xl font-serif text-primary">
-            September 14, 2025
+            2025. szeptember 14.
           </p>
           <p className="text-muted-foreground">
-            Budapest, Hungary
+            Budapest, Magyarország
           </p>
         </motion.div>
 
@@ -110,10 +110,10 @@ export const HeroSection = () => {
         delay: 0.8
       }} className="flex flex-col sm:flex-row gap-4 justify-center">
           <button onClick={() => scrollToSection("#schedule")} className="btn-botanical-primary">
-            View Schedule
+            Program megtekintése
           </button>
           <button onClick={() => scrollToSection("#rsvp")} className="btn-botanical-outline">
-            RSVP
+            Visszajelzés
           </button>
         </motion.div>
       </div>

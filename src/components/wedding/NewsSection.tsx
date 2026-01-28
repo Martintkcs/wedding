@@ -6,31 +6,31 @@ import { SectionDivider } from "./BotanicalDecoration";
 
 const newsItems = [
   {
-    date: "January 15, 2025",
+    date: "2025. január 15.",
     icon: Bell,
-    title: "Save the Date!",
-    content: "We're officially announcing our wedding date. Mark your calendars for September 14, 2025!",
+    title: "Tedd fel a naptárba!",
+    content: "Hivatalosan is bejelentjük az esküvő időpontját. Írd be a naptáradba: 2025. szeptember 14.",
     isNew: false,
   },
   {
-    date: "February 10, 2025",
+    date: "2025. február 10.",
     icon: Hotel,
-    title: "Hotel Block Available",
-    content: "We've reserved a block of rooms at Hotel Gellért. Book before July 1st for the special rate.",
+    title: "Szobakeret lefoglalva",
+    content: "A Hotel Gellértben szobakeretet foglaltunk. A kedvezményes árért július 1-ig foglaljatok.",
     isNew: false,
   },
   {
-    date: "March 5, 2025",
+    date: "2025. március 5.",
     icon: Calendar,
-    title: "RSVPs Now Open",
-    content: "You can now RSVP for our wedding. Please respond by August 1, 2025.",
+    title: "Megnyílt a visszajelzés",
+    content: "Már tudtok visszajelezni az esküvőre. Kérjük, 2025. augusztus 1-ig küldjétek el.",
     isNew: true,
   },
   {
-    date: "April 20, 2025",
+    date: "2025. április 20.",
     icon: Music,
-    title: "Live Band Confirmed",
-    content: "We're excited to announce that the Papagáj Band will be playing at our reception!",
+    title: "Élő zenekar megerősítve",
+    content: "Örömmel jelentjük be, hogy a Papagáj Band játszik majd a fogadáson!",
     isNew: true,
   },
 ];
@@ -50,10 +50,10 @@ export const NewsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-heading text-foreground mb-4">
-            News & Updates
+            Hírek és frissítések
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Stay up to date with wedding announcements
+            Kövesd az esküvővel kapcsolatos bejelentéseket
           </p>
         </motion.div>
 
@@ -68,7 +68,7 @@ export const NewsSection = () => {
             >
               {item.isNew && (
                 <span className="absolute top-4 right-4 px-2 py-1 text-xs font-medium text-primary-foreground bg-primary rounded-full">
-                  New
+                  Új
                 </span>
               )}
 

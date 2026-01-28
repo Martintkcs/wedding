@@ -7,23 +7,23 @@ import { SectionDivider } from "./BotanicalDecoration";
 const travelOptions = [
   {
     icon: Plane,
-    title: "By Air",
-    content: "Budapest Ferenc Liszt International Airport (BUD) is 25km from the venue. Taxis and airport shuttles are readily available.",
+    title: "Repülővel",
+    content: "A Budapest Liszt Ferenc Nemzetközi Repülőtér (BUD) 25 km-re van a helyszíntől. Taxi és reptéri transzfer könnyen elérhető.",
   },
   {
     icon: Train,
-    title: "By Train",
-    content: "Budapest Keleti station is the main hub. Take Metro line M4 to Szent Gellért tér, then walk 5 minutes to the venue.",
+    title: "Vonattal",
+    content: "A Keleti pályaudvar a fő csomópont. Szállj az M4-es metróra a Szent Gellért térig, majd 5 perc séta a helyszín.",
   },
   {
     icon: Car,
-    title: "By Car",
-    content: "The venue is easily accessible from the M1/M7 motorways. GPS: Várkert Bazár, 1013 Budapest.",
+    title: "Autóval",
+    content: "A helyszín az M1/M7 autópályákról könnyen megközelíthető. GPS: Várkert Bazár, 1013 Budapest.",
   },
   {
     icon: ParkingCircle,
-    title: "Parking",
-    content: "Limited parking is available at the venue. We recommend using public transport or taxi services.",
+    title: "Parkolás",
+    content: "Korlátozott parkolás lehetséges a helyszínen. Javasoljuk a tömegközlekedést vagy taxit.",
   },
 ];
 
@@ -31,25 +31,25 @@ const accommodations = [
   {
     name: "Hotel Gellért",
     distance: "0.5 km",
-    note: "Wedding block available",
+    note: "Esküvői szobakeret elérhető",
     link: "#",
   },
   {
     name: "Danubius Hotel",
     distance: "1.2 km",
-    note: "Great value option",
+    note: "Kiváló ár-érték arány",
     link: "#",
   },
   {
     name: "Aria Hotel Budapest",
     distance: "2.5 km",
-    note: "Luxury boutique hotel",
+    note: "Luxus butikhotel",
     link: "#",
   },
   {
-    name: "Airbnb Options",
-    distance: "Various",
-    note: "Many apartments nearby",
+    name: "Airbnb lehetőségek",
+    distance: "Többféle",
+    note: "Sok apartman a közelben",
     link: "#",
   },
 ];
@@ -69,17 +69,17 @@ export const TravelSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-heading text-foreground mb-4">
-            Travel & Accommodation
+            Utazás és szállás
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            How to get to Budapest and where to stay
+            Hogyan jutsz el Budapestre és hol érdemes megszállni
           </p>
         </motion.div>
 
         {/* Getting There */}
         <div className="mb-16">
           <h3 className="font-serif text-xl text-foreground text-center mb-8">
-            Getting There
+            Megközelítés
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {travelOptions.map((option, index) => (
@@ -111,7 +111,7 @@ export const TravelSection = () => {
         {/* Accommodations */}
         <div className="mb-12">
           <h3 className="font-serif text-xl text-foreground text-center mb-8">
-            Where to Stay
+            Hol szállj meg
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {accommodations.map((hotel, index) => (
@@ -131,7 +131,7 @@ export const TravelSection = () => {
                   {hotel.name}
                 </h4>
                 <p className="text-sm text-muted-foreground mb-1">
-                  {hotel.distance} from venue
+                  {hotel.distance} a helyszíntől
                 </p>
                 <p className="text-xs text-primary">
                   {hotel.note}
@@ -149,7 +149,7 @@ export const TravelSection = () => {
           className="rounded-2xl overflow-hidden shadow-card h-64 sm:h-80 bg-sage-muted/50 flex items-center justify-center"
         >
           <div className="text-center p-8">
-            <p className="text-muted-foreground mb-2">Interactive Map</p>
+            <p className="text-muted-foreground mb-2">Interaktív térkép</p>
             <p className="text-sm text-muted-foreground/60">
               Várkert Bazár, Budapest
             </p>
@@ -159,7 +159,7 @@ export const TravelSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-4 text-primary hover:underline text-sm"
             >
-              Open in Google Maps
+              Megnyitás a Google Térképen
               <ExternalLink size={14} />
             </a>
           </div>

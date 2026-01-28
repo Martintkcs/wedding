@@ -7,39 +7,39 @@ import { SectionDivider } from "./BotanicalDecoration";
 const infoCards = [
   {
     icon: Calendar,
-    title: "Date",
-    content: "September 14, 2025",
-    subtext: "Saturday, 4:00 PM",
+    title: "Dátum",
+    content: "2025. szeptember 14.",
+    subtext: "Szombat, 16:00",
   },
   {
     icon: MapPin,
-    title: "Venue",
+    title: "Helyszín",
     content: "Várkert Bazár",
     subtext: "1013 Budapest, Ybl Miklós tér 2-6",
   },
   {
     icon: Shirt,
-    title: "Dress Code",
-    content: "Semi-Formal",
-    subtext: "Garden party elegance",
+    title: "Öltözködési stílus",
+    content: "Félformális",
+    subtext: "Kerti parti elegancia",
   },
   {
     icon: Gift,
-    title: "Gifts",
-    content: "Your presence is our present",
-    subtext: "No boxed gifts, please",
+    title: "Ajándékok",
+    content: "Számunkra a jelenléted a legnagyobb ajándék",
+    subtext: "Kérjük, ne hozzatok tárgyi ajándékot",
   },
   {
     icon: Users,
-    title: "Guests",
-    content: "Adults only celebration",
-    subtext: "Kindly leave little ones at home",
+    title: "Vendégek",
+    content: "Csak felnőtteknek szóló ünnepség",
+    subtext: "Kérjük, a kicsiket hagyjátok otthon",
   },
   {
     icon: Heart,
-    title: "Special Note",
-    content: "We can't wait to celebrate with you!",
-    subtext: "This will be an unforgettable day",
+    title: "Különleges üzenet",
+    content: "Alig várjuk, hogy veletek ünnepeljünk!",
+    subtext: "Felejthetetlen nap lesz",
   },
 ];
 
@@ -58,10 +58,10 @@ export const InfoSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-heading text-foreground mb-4">
-            Wedding Details
+            Esküvő részletei
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Everything you need to know about our special day
+            Minden fontos tudnivaló a nagy napunkról
           </p>
         </motion.div>
 

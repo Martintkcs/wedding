@@ -6,43 +6,43 @@ import { SectionDivider, LeafSvg } from "./BotanicalDecoration";
 const scheduleItems = [
   {
     time: "16:00",
-    title: "Guest Arrival",
-    description: "Welcome drinks in the garden",
+    title: "Vendégek érkezése",
+    description: "Üdvözlő italok a kertben",
   },
   {
     time: "17:00",
-    title: "Ceremony",
-    description: "Exchange of vows in the main hall",
+    title: "Szertartás",
+    description: "Fogadalom a díszteremben",
   },
   {
     time: "18:00",
-    title: "Cocktail Hour",
-    description: "Refreshments and canapés on the terrace",
+    title: "Koktélóra",
+    description: "Frissítők és falatkák a teraszon",
   },
   {
     time: "19:00",
-    title: "Dinner",
-    description: "Three-course dinner with wine pairing",
+    title: "Vacsora",
+    description: "Háromfogásos vacsora borsorral",
   },
   {
     time: "21:00",
-    title: "First Dance",
-    description: "Let the celebration begin!",
+    title: "Nyitótánc",
+    description: "Kezdődjön az ünneplés!",
   },
   {
     time: "22:00",
-    title: "Party",
-    description: "Dancing and festivities continue",
+    title: "Buli",
+    description: "Tánc és ünneplés",
   },
   {
     time: "00:00",
-    title: "Midnight Snack",
-    description: "Traditional Hungarian treats",
+    title: "Éjféli falatok",
+    description: "Hagyományos magyar finomságok",
   },
   {
     time: "02:00",
-    title: "End of Celebration",
-    description: "Thank you for celebrating with us!",
+    title: "Ünneplés vége",
+    description: "Köszönjük, hogy velünk ünnepeltetek!",
   },
 ];
 
@@ -61,10 +61,10 @@ export const ScheduleSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-heading text-foreground mb-4">
-            Schedule
+            Program
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            The timeline for our celebration
+            Az ünneplés időbeosztása
           </p>
         </motion.div>
 

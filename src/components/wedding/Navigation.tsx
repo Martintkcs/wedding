@@ -3,15 +3,15 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Info", href: "#info" },
-  { label: "Schedule", href: "#schedule" },
-  { label: "Menu", href: "#menu" },
-  { label: "News", href: "#news" },
-  { label: "Travel", href: "#travel" },
-  { label: "FAQ", href: "#faq" },
-  { label: "RSVP", href: "#rsvp" },
-  { label: "Contact", href: "#contact" },
+  { label: "Kezdőlap", href: "#home" },
+  { label: "Infó", href: "#info" },
+  { label: "Program", href: "#schedule" },
+  { label: "Menü", href: "#menu" },
+  { label: "Hírek", href: "#news" },
+  { label: "Utazás", href: "#travel" },
+  { label: "GYIK", href: "#faq" },
+  { label: "Visszajelzés", href: "#rsvp" },
+  { label: "Kapcsolat", href: "#contact" },
 ];
 
 export const Navigation = () => {
@@ -77,7 +77,7 @@ export const Navigation = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 text-muted-foreground hover:text-primary transition-colors"
-            aria-label="Toggle menu"
+            aria-label="Menü megnyitása"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
