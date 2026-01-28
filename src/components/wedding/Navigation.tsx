@@ -7,10 +7,8 @@ const navItems = [
   { label: "Infó", href: "#info" },
   { label: "Program", href: "#schedule" },
   { label: "Menü", href: "#menu" },
-  { label: "Hírek", href: "#news" },
   { label: "Utazás", href: "#travel" },
   { label: "GYIK", href: "#faq" },
-  { label: "Visszajelzés", href: "#rsvp" },
   { label: "Kapcsolat", href: "#contact" },
 ];
 

@@ -112,9 +112,6 @@ export const HeroSection = () => {
           <button onClick={() => scrollToSection("#schedule")} className="btn-botanical-primary">
             Program megtekintése
           </button>
-          <button onClick={() => scrollToSection("#rsvp")} className="btn-botanical-outline">
-            Visszajelzés
-          </button>
         </motion.div>
       </div>
 
