@@ -92,7 +92,7 @@ export const ScheduleSection = () => {
                     index % 2 === 0 ? "sm:pr-12 sm:text-right" : "sm:pl-12"
                   }`}
                 >
-                  <div className="card-botanical">
+                  <div className="card-botanical flex h-[168px] flex-col justify-center sm:h-auto">
                     <span className="inline-block px-3 py-1 mb-2 text-sm font-medium text-primary bg-primary/10 rounded-full">
                       {item.time}
                     </span>
