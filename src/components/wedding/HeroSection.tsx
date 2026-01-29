@@ -12,9 +12,9 @@ export const HeroSection = () => {
   };
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-40 blur-sm scale-105" />
+      <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-80 blur-sm scale-105" />
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-sage-muted/70 via-background/90 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-sage-muted/70 via-background/10 to-background" />
       
       {/* Botanical Decorations */}
       <FloatingLeaves />
