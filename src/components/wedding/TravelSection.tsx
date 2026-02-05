@@ -19,9 +19,34 @@ const travelOptions = [
 
 const accommodations = [
   {
-    name: "Hotel Villa Classica",
-    distance: "6 km",
-    link: "https://classicahotel.hu/hu/",
+    name: "Duna Panzió",
+    link: "https://www.google.com/maps/search/?api=1&query=Duna+Panzi%C3%B3+P%C3%A1pa",
+  },
+  {
+    name: "Centrum Rezidencia",
+    link: "https://www.google.com/maps/search/?api=1&query=Centrum+Rezidencia+P%C3%A1pa",
+  },
+  {
+    name: "Belvárosi Rezidencia",
+    link: "https://www.google.com/maps/search/?api=1&query=Belv%C3%A1rosi+Rezidencia+P%C3%A1pa",
+  },
+];
+
+const accommodationMaps = [
+  {
+    title: "Interaktív térkép útvonal tervezéssel",
+    description: "Duna Panzió - Secret Lake, Pápa",
+    link: "https://www.google.com/maps/dir/?api=1&origin=Duna+Panzi%C3%B3,+P%C3%A1pa&destination=Secret+Lake,+P%C3%A1pa",
+  },
+  {
+    title: "Interaktív térkép útvonal tervezéssel",
+    description: "Centrum Rezidencia - Secret Lake, Pápa",
+    link: "https://www.google.com/maps/dir/?api=1&origin=Centrum+Rezidencia,+P%C3%A1pa&destination=Secret+Lake,+P%C3%A1pa",
+  },
+  {
+    title: "Interaktív térkép útvonal tervezéssel",
+    description: "Belvárosi Rezidencia - Secret Lake, Pápa",
+    link: "https://www.google.com/maps/dir/?api=1&origin=Belv%C3%A1rosi+Rezidencia,+P%C3%A1pa&destination=Secret+Lake,+P%C3%A1pa",
   },
 ];
 
@@ -103,10 +128,13 @@ export const TravelSection = () => {
 
         {/* Accommodations */}
         <div className="mb-12">
-          <h3 className="font-serif text-xl text-foreground text-center mb-8">
+          <h3 className="font-serif text-xl text-foreground text-center mb-2">
             Hol szállsz meg
           </h3>
-          <div className="flex justify-center">
+          <p className="text-sm text-muted-foreground text-center mb-8">
+            (pontos szállásodat az esküvő előtt megkapod)
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {accommodations.map((hotel, index) => (
                 <motion.a
                     key={hotel.name}
@@ -114,7 +142,7 @@ export const TravelSection = () => {
                     initial={{opacity: 0, y: 20}}
                     animate={isInView ? {opacity: 1, y: 0} : {}}
                     transition={{duration: 0.5, delay: 0.4 + index * 0.1}}
-                    className="card-botanical group hover:shadow-elevated transition-all duration-300 w-full max-w-lg"
+                    className="card-botanical group hover:shadow-elevated transition-all duration-300 h-full min-h-[220px] flex flex-col"
                 >
                   <div className="flex items-start justify-between mb-3">
                     <Hotel className="w-5 h-5 text-primary"/>
@@ -123,37 +151,36 @@ export const TravelSection = () => {
                   <h4 className="font-serif text-lg text-foreground mb-1">
                     {hotel.name}
                   </h4>
-                  <p className="text-sm text-muted-foreground mb-1">
-                    {hotel.distance} a helyszíntől
-                  </p>
-                  <p className="text-xs text-primary">
-                    {hotel.note}
-                  </p>
                 </motion.a>
             ))}
           </div>
-          <motion.div
-              initial={{opacity: 0, y: 20}}
-              animate={isInView ? {opacity: 1, y: 0} : {}}
-              transition={{duration: 0.5, delay: 0.4}}
-              className="mt-8 rounded-2xl overflow-hidden shadow-card h-64 sm:h-80 bg-sage-muted/50 flex items-center justify-center"
-          >
-            <div className="text-center p-8">
-              <p className="text-muted-foreground mb-2">Interaktív térkép útvonal tervezéssel</p>
-              <p className="text-sm text-muted-foreground/60">
-                Hotel Villa Classica -Secret Lake, Pápa
-              </p>
-              <a
-                  href="https://www.google.com/maps/dir/Hotel+Villa+Classica,+P%C3%A1pa,+B%C3%A1stya+u.+1,+8500/Secret+Lake,+P%C3%A1pa,+Malom+%C3%BAt,+8500/@47.3093743,17.4736616,14.37z/data=!4m14!4m13!1m5!1m1!1s0x47696105804c381b:0x74fc07f57bfb3fa8!2m2!1d17.4643903!2d47.3272714!1m5!1m1!1s0x4769633bdc1d44eb:0x8f4d2a4a7a4cc5c!2m2!1d17.5054807!2d47.300435!3e0?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 text-primary hover:underline text-sm"
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            {accommodationMaps.map((mapItem, index) => (
+              <motion.div
+                key={mapItem.description}
+                initial={{opacity: 0, y: 20}}
+                animate={isInView ? {opacity: 1, y: 0} : {}}
+                transition={{duration: 0.5, delay: 0.4 + index * 0.1}}
+                className="rounded-2xl overflow-hidden shadow-card bg-sage-muted/50 flex items-center justify-center h-full min-h-[220px]"
               >
-                Megnyitás a Google Térképen
-                <ExternalLink size={14}/>
-              </a>
-            </div>
-          </motion.div>
+                <div className="text-center p-6">
+                  <p className="text-muted-foreground mb-2">{mapItem.title}</p>
+                  <p className="text-sm text-muted-foreground/60">
+                    {mapItem.description}
+                  </p>
+                  <a
+                    href={mapItem.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-4 text-primary hover:underline text-sm"
+                  >
+                    Megnyitás a Google Térképen
+                    <ExternalLink size={14}/>
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
 
