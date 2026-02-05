@@ -19,34 +19,34 @@ const travelOptions = [
 
 const accommodations = [
   {
-    name: "Duna Panzió",
-    link: "https://www.google.com/maps/search/?api=1&query=Duna+Panzi%C3%B3+P%C3%A1pa",
+    name: "Dunna Panzió",
+    link: "https://dunna.hu/",
   },
   {
     name: "Centrum Rezidencia",
-    link: "https://www.google.com/maps/search/?api=1&query=Centrum+Rezidencia+P%C3%A1pa",
+    link: "https://www.booking.com/hotel/hu/centrum-rezidencia-papa.hu.html?aid=319854&label=centrum-rezidencia-papa-WwvfiM7KjF%2AMHicp%2ACDU0gS747717833407%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2425152981095%3Alp9062963%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfebvPBbIhsA9v88nhiHKmI&sid=127f06e275ba3d294118ed72b39c223b&dest_id=-863934&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1770329122&srpvid=75bcee5eeaef2c702a19976ace01501d&type=total&ucfs=1&",
   },
   {
     name: "Belvárosi Rezidencia",
-    link: "https://www.google.com/maps/search/?api=1&query=Belv%C3%A1rosi+Rezidencia+P%C3%A1pa",
+    link: "https://www.booking.com/hotel/hu/belva-rosi-panzia3-pa-pa.hu.html?aid=318615&label=Hungarian_Hungary_HU_HU_29562110185-Ja3GNxTF4FyuEozSs0%2A%2A1QS217291076767%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55511579316%3Atidsa-322372659818%3Alp9062963%3Ali%3Adec%3Adm&sid=ce5ca79f5bad8a4ba944d84e55f71652&dest_id=-863934&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1770329360&srpvid=01ee9ba7f7f602b5&type=total&ucfs=1&",
   },
 ];
 
 const accommodationMaps = [
   {
     title: "Interaktív térkép útvonal tervezéssel",
-    description: "Duna Panzió - Secret Lake, Pápa",
-    link: "https://www.google.com/maps/dir/?api=1&origin=Duna+Panzi%C3%B3,+P%C3%A1pa&destination=Secret+Lake,+P%C3%A1pa",
+    description: "Dunna Panzió - Secret Lake, Pápa",
+    link: "https://www.google.com/maps/dir/Dunna,+P%C3%A1pa,+Szent+Istv%C3%A1n+%C3%BAt+10,+8500/Secret+Lake,+P%C3%A1pa,+Malom+%C3%BAt,+8500/@47.3155069,17.4559752,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x476961071d0307ef:0x8924e0e99a4157ff!2m2!1d17.4630744!2d47.3324304!1m5!1m1!1s0x4769633bdc1d44eb:0x8f4d2a4a7a4cc5c!2m2!1d17.5054807!2d47.300435?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     title: "Interaktív térkép útvonal tervezéssel",
     description: "Centrum Rezidencia - Secret Lake, Pápa",
-    link: "https://www.google.com/maps/dir/?api=1&origin=Centrum+Rezidencia,+P%C3%A1pa&destination=Secret+Lake,+P%C3%A1pa",
+    link: "https://www.google.com/maps/dir/Centrum+Rezidencia+P%C3%A1pa,+P%C3%A1pa,+Fapiac+t%C3%A9r+4,+8500/Secret+Lake,+P%C3%A1pa,+Malom+%C3%BAt,+8500/@47.3114907,17.4634116,14z/data=!4m13!4m12!1m5!1m1!1s0x4769610052a652c5:0x886282f91af4da82!2m2!1d17.4688103!2d47.3251747!1m5!1m1!1s0x4769633bdc1d44eb:0x8f4d2a4a7a4cc5c!2m2!1d17.5054807!2d47.300435?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     title: "Interaktív térkép útvonal tervezéssel",
     description: "Belvárosi Rezidencia - Secret Lake, Pápa",
-    link: "https://www.google.com/maps/dir/?api=1&origin=Belv%C3%A1rosi+Rezidencia,+P%C3%A1pa&destination=Secret+Lake,+P%C3%A1pa",
+    link: "https://www.google.com/maps/dir/Belv%C3%A1rosi+Rezidencia+(Panzi%C3%B3)+P%C3%A1pa,+P%C3%A1pa,+Anna+t%C3%A9r+6,+8500/Secret+Lake,+P%C3%A1pa,+Malom+%C3%BAt,+8500/@47.3128999,17.4631253,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4769610e6bb96cd1:0x5cabe05690b2d04e!2m2!1d17.4688754!2d47.3252169!1m5!1m1!1s0x4769633bdc1d44eb:0x8f4d2a4a7a4cc5c!2m2!1d17.5054807!2d47.300435?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
 

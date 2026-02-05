@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Mit érdemes viselni?",
-    answer: "Az öltözködési stílus formális, kérel kerüld a fekete,fehér,priros színeket",
+    answer: "Az öltözködési stílus formális, kérlek kerüld a fekete,fehér,piros színeket",
   },
   {
     question: "Hozhatok kísérőt?",

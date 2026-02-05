@@ -37,7 +37,7 @@ const scheduleItems = [
   {
     time: "00:00",
     title: "Éjféli falatok",
-    description: "Hagyományos magyar finomságok",
+    description: "Hagyományos magyar finomságok + meglepi",
   },
   {
     time: "05:00",
