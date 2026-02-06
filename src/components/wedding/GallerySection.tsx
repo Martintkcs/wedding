@@ -5,12 +5,12 @@ import { Camera, ExternalLink } from "lucide-react";
 import { SectionDivider } from "./BotanicalDecoration";
 
 const galleryImages = [
-  { id: 1, alt: "Páros fotó 1" },
-  { id: 2, alt: "Páros fotó 2" },
-  { id: 3, alt: "Páros fotó 3" },
-  { id: 4, alt: "Páros fotó 4" },
-  { id: 5, alt: "Páros fotó 5" },
-  { id: 6, alt: "Páros fotó 6" },
+  { id: 1, alt: "Páros fotó 1", src: "/images/gallery-1.jpg" },
+  { id: 2, alt: "Páros fotó 2", src: "/images/gallery-2.jpg" },
+  { id: 3, alt: "Páros fotó 3", src: "/images/gallery-3.jpg" },
+  { id: 4, alt: "Páros fotó 4", src: "/images/gallery-4.jpg" },
+  { id: 5, alt: "Páros fotó 5", src: "/images/gallery-5.jpg" },
+  { id: 6, alt: "Páros fotó 6", src: "/images/gallery-6.jpg" },
 ];
 
 export const GallerySection = () => {
@@ -46,10 +46,14 @@ export const GallerySection = () => {
                 index === 0 ? "md:row-span-2 md:aspect-auto" : ""
               }`}
             >
-              {/* Placeholder gradient background */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Camera className="w-8 h-8 text-primary/30" />
-              </div>
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+
+              <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10" />
 
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
@@ -62,15 +66,19 @@ export const GallerySection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-center"
+          className="mx-auto max-w-xl"
         >
           <a
             href="https://drive.google.com/drive/folders/17J3idz6NFTVr6s_wcH3lDQjjBeCExBJu?usp=sharing"
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+            className="group flex items-center justify-center gap-3 rounded-2xl border border-primary/10 bg-white/70 px-6 py-5 text-center text-primary shadow-card transition hover:border-primary/30 hover:bg-white"
           >
-            <Camera size={18} />
-            <span>Töltsd fel a fotóidat az esküvő után</span>
-            <ExternalLink size={14} />
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary transition group-hover:bg-primary/20">
+              <Camera size={18} />
+            </span>
+            <span className="text-base font-medium">
+              Töltsd fel a fotóidat az esküvő után
+            </span>
+            <ExternalLink size={16} />
           </a>
         </motion.div>
       </div>
