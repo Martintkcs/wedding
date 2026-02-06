@@ -111,9 +111,9 @@ export const TravelSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-8 rounded-2xl overflow-hidden shadow-card h-64 sm:h-80 bg-sage-muted/50 flex items-center justify-center"
+            className="mt-8 rounded-2xl overflow-hidden shadow-card bg-sage-muted/50 flex items-center justify-center p-6 sm:p-8"
           >
-            <div className="text-center p-8">
+            <div className="text-center">
               <p className="text-muted-foreground mb-2">Interaktív térkép</p>
               <p className="text-sm text-muted-foreground/60">
                 Secret Lake, Pápa
