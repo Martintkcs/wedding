@@ -64,6 +64,8 @@ export const ContactSection = () => {
               <div className="space-y-2">
                 <a
                   href={`tel:${contact.phone.replace(/\s/g, "")}`}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center justify-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone size={16} />
@@ -71,6 +73,8 @@ export const ContactSection = () => {
                 </a>
                 <a
                   href={`mailto:${contact.email}`}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center justify-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail size={16} />
