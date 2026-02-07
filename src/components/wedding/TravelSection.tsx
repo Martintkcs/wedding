@@ -144,6 +144,8 @@ export const TravelSection = () => {
               <div key={pair.hotel.name} className="grid gap-6">
                 <motion.a
                   href={pair.hotel.link}
+                  target="_blank"
+                  rel="noreferrer"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
@@ -190,6 +192,8 @@ export const TravelSection = () => {
               <motion.a
                 key={hotel.name}
                 href={hotel.link}
+                target="_blank"
+                rel="noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}

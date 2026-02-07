@@ -70,6 +70,8 @@ export const GallerySection = () => {
         >
           <a
             href="https://drive.google.com/drive/folders/17J3idz6NFTVr6s_wcH3lDQjjBeCExBJu?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
             className="group flex items-center justify-center gap-3 rounded-2xl border border-primary/10 bg-white/70 px-6 py-5 text-center text-primary shadow-card transition hover:border-primary/30 hover:bg-white"
           >
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary transition group-hover:bg-primary/20">
