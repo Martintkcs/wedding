@@ -8,7 +8,7 @@ const travelOptions = [
   {
     icon: Car,
     title: "Autóval",
-    content: "A helyszín a 83-s útról könnyen megközelíthető GPS: Pápa, Malom út 739/10, 8500.",
+    content: "A helyszín a 83-s útról könnyen megközelíthető. GPS: Pápa, Malom út 739/10, 8500.",
   },
   {
     icon: ParkingCircle,

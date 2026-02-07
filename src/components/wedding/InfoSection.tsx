@@ -21,12 +21,12 @@ const infoCards = [
     icon: Shirt,
     title: "Öltözködési stílus",
     content: "Formális",
-    subtext: "Kerüld a fehér,piros és fekete színeket",
+    subtext: "Kérlek kerüld a fehér, piros és fekete színeket",
   },
   {
     icon: Gift,
     title: "Ajándékok",
-    content: "Nincs szükség semmi tárgyi dolgora",
+    content: "Nincs szükségünk semmi tárgyi dolgora",
     subtext: "Egy borítékban elrejtheted!",
   },
   {

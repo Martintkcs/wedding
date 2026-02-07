@@ -21,15 +21,15 @@ const menuCategories = [
     items: [
       { course: "Leves", dish: "Falusi tyúkhúsleves csigatésztával " },
       { course: "Főétel I", dish: "Marhapörkölt galuskával" },
-      { course: "Főtel II", dish: "Csirke cordon Bleu\n" + "Rántott sertéskaraj\n" +
-            "Rántott trappista sajt" }
+      { course: "Főtel II", dish: "Csirke cordon Bleu,\n" + "Rántott sertéskaraj,\n" +
+            "Rántott trappista sajt, Rizzsel, Parázs burgonyával és Tartármártással" }
     ],
   },
   {
     icon: Moon,
     title: "Éjféli falatok",
     items: [
-      "falusi Töltött káposzta \n" +
+      "Falusi töltött káposzta \n" +
       "friss kenyérrel és tejföllel\n",
       "Mini hamburger",
     ],
@@ -40,9 +40,9 @@ const menuCategories = [
     items: [
       { course: "Tömények", dish: "Jager, Pálinka, Rum, Baliey's, Vodka, Gin" },
       { course: "Csapolt sör", dish: "Peroni" },
-      { course: "Borok", dish: "Olasz Rizling, muskotály, cabernet,\n" +
-            "rosé, kék frankos" },
-         { course: "alkoholmentes italok", dish: "Coca cola, Fanta, Sprite, Tonic,\n" +
+      { course: "Borok", dish: "Olasz Rizling, Muskotály, Cabernet,\n" +
+            "Rosé, Kék frankos" },
+         { course: "Alkoholmentes italok", dish: "Coca cola, Fanta, Sprite, Tonic,\n" +
                "Almalé, Baracklé, Narancslé, Peroni, Kávék, Limonádék" }
     ],
   },

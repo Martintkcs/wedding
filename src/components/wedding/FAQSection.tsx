@@ -12,7 +12,7 @@ import { SectionDivider } from "./BotanicalDecoration";
 const faqs = [
   {
     question: "Mikor érkezzek?",
-    answer: "Kérjük, legkésőbb 16:00-ra érkezzetek, hogy legyen időtök helyet foglalni a 17:00-kor kezdődő szertartás előtt, és megkóstolni az üdvözlő frissítőket és falatokat.",
+    answer: "Érkezés 16:00-tól lehetséges, de kérlek, hogy 16:15-re legkésőbb érjetek oda, hogy legyen időtök helyet foglalni a 17:00-kor kezdődő szertartás előtt és megkóstolni az üdvözlő frissítőket és falatokat.",
   },
   {
     question: "Mit érdemes viselni?",
@@ -20,11 +20,11 @@ const faqs = [
   },
   {
     question: "Hozhatok kísérőt?",
-    answer: "A meghívódból kiderül, hogy hozhatsz-e kísérőt. Ha bizonytalan vagy, kérlek, írj nekünk. Korlátozott a férőhely, ezért szeretnénk pontosan látni a létszámot.",
+    answer: "A meghívódból kiderül, hogy hozhatsz-e kísérőt.",
   },
   {
     question: "Van parkolási lehetőség?",
-    answer: "A helyszínen van a parkolásra lehetőség, érkezési sorrendben.",
+    answer: "A helyszínen van a parkolásra lehetőség ingyenesen.",
   },
   {
     question: "Mi van, ha étkezési megkötésem van?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Fotózhatok a szertartás alatt?",
-    answer: "Kérjük, hogy a szertartás legyen telefonmentes – a fogadalmak alatt tegyétek el a készülékeket. A fotós mindent megörökít! A vacsorán és a bulin nyugodtan fotózzatok.",
+    answer: "Kérjük, hogy a szertartás legyen telefonmentes – a ceremónia alatt tegyétek el a készülékeket. A fotós mindent megörökít! A vacsorán és a bulin nyugodtan fotózzatok.",
   },
   {
     question: "Mikor ér véget a buli?",
