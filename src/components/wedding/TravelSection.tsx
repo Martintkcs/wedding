@@ -157,8 +157,7 @@ export const AccommodationSection = () => {
           <h3 className="font-serif text-xl text-foreground text-center mb-2">
             Elérhetőségek
           </h3>
-          <p className="text-sm text-muted-foreground text-center mb-8">
-          </p>
+          <p className="text-sm text-muted-foreground text-center mb-8"></p>
           <div className="grid grid-cols-1 gap-6 md:hidden">
             {accommodationPairs.map((pair, index) => (
               <div key={pair.hotel.name} className="grid gap-6">
@@ -250,6 +249,21 @@ export const AccommodationSection = () => {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="mt-8 rounded-2xl border border-primary/20 bg-background/70 p-6 text-center"
+          >
+            <p className="text-muted-foreground leading-relaxed">
+              A szállás elfoglalása után a helyszínre taxival, vagy egymás közt
+              összebeszélve, egymáshoz beülve tudtok eljutni. Ha autóval jöttök,
+              nyugodtan ott hagyhatjátok a helyszínen másnapig. Este a helyszínről
+              transzfer indul, ami visszavisz titeket a szállásra, másnap pedig
+              össze tudjátok beszélni, ki mikor megy az autókért.
+            </p>
+          </motion.div>
         </div>
       </div>
 
