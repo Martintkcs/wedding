@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Navigation } from "@/components/wedding/Navigation";
 import { HeroSection } from "@/components/wedding/HeroSection";
 import { InfoSection } from "@/components/wedding/InfoSection";
@@ -7,24 +8,30 @@ import { TravelSection, AccommodationSection } from "@/components/wedding/Travel
 import { FAQSection } from "@/components/wedding/FAQSection";
 import { GallerySection } from "@/components/wedding/GallerySection";
 import { ContactSection, Footer } from "@/components/wedding/ContactSection";
+import { EnvelopeIntro } from "@/components/wedding/EnvelopeIntro";
 
 const Index = () => {
+  const [isInviteOpened, setIsInviteOpened] = useState(false);
+
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      <main>
-        <HeroSection />
-        <InfoSection />
-        <ScheduleSection />
-        <MenuSection />
-        <TravelSection />
-        <AccommodationSection />
-        <GallerySection />
-        <FAQSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
+    <>
+      {!isInviteOpened && <EnvelopeIntro onOpened={() => setIsInviteOpened(true)} />}
+      <div className="min-h-screen bg-background">
+        <Navigation />
+        <main>
+          <HeroSection />
+          <InfoSection />
+          <ScheduleSection />
+          <MenuSection />
+          <TravelSection />
+          <AccommodationSection />
+          <GallerySection />
+          <FAQSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
 
