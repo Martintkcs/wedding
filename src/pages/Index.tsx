@@ -16,7 +16,11 @@ const Index = () => {
   return (
     <>
       {!isInviteOpened && <EnvelopeIntro onOpened={() => setIsInviteOpened(true)} />}
-      <div className="min-h-screen bg-background">
+      <div
+        className={`min-h-screen bg-background transition-opacity duration-1000 ${
+          isInviteOpened ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <Navigation />
         <main>
           <HeroSection />
