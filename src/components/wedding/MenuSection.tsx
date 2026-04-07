@@ -21,7 +21,7 @@ const menuCategories = [
     items: [
       { course: "Leves", dish: "Falusi tyúkhúsleves csigatésztával " },
       { course: "Főétel I", dish: "Marhapörkölt galuskával" },
-      { course: "Főtel II", dish: "Csirke cordon Bleu,\n" + "Rántott sertéskaraj,\n" +
+      { course: "Főétel II", dish: "Csirke cordon Bleu,\n" + "Rántott sertéskaraj,\n" +
             "Rántott trappista sajt, Rizzsel, Parázs burgonyával és Tartármártással" }
     ],
   },
